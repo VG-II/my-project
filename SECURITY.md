@@ -8,6 +8,8 @@
 - **GitHub Security Advisory:** [Report a vulnerability](https://github.com/artemiimillier/claude-code-starter/security/advisories/new) (предпочтительно)
 - **Email:** через Contact-форму профиля [@artemiimillier](https://github.com/artemiimillier)
 
+> **Примечание:** Это адаптированная версия шаблона (оригинал: `artemiimillier/claude-code-starter`). Уязвимости в адаптации сообщайте через тот же механизм.
+
 Укажи:
 - Описание уязвимости
 - Шаги воспроизведения
@@ -26,9 +28,9 @@
 
 - Несогласие с выбором методологии или структурой папок
 - Отсутствие фичи (это feature request)
-- Проблемы при установке окружения (VS Code, Claude Code, Node.js) — это в `TROUBLESHOOTING.md`
-- Уязвимости в Claude Code как продукте Anthropic — сообщай им напрямую
-- Уязвимости в установленных через шаблон скилах (Bulletproof, Playwright, Skill Creator) — сообщай авторам соответствующих пакетов
+- Проблемы при установке окружения (VS Code, Qwen Code, Node.js) — это в `TROUBLESHOOTING.md`
+- Уязвимости в Qwen Code как продукте — сообщай напрямую разработчикам Qwen Code
+- Уязвимости в установленных через шаблон скиллах (Bulletproof, Playwright, Skill Creator) — сообщай авторам соответствующих пакетов
 
 ## Таймлайн реакции
 

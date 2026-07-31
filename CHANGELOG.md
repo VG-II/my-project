@@ -34,15 +34,15 @@
 - **`examples/coffeeshop/`** - полный пример заполненного проекта (вымышленная сеть кофеен Coffee Place в Казани). Все 7 блоков `.business/`, execution с текущей неделей и бэклогом, один рабочий план (подписка Coffee Monthly) и ретроспектива фазы 1. Служит образцом результата онбординга для новых пользователей
 - **`SECURITY.md`** - политика сообщения об уязвимостях (GitHub Security Advisory + контакты), таймлайн реакции, что считается / не считается уязвимостью
 - **`CODE_OF_CONDUCT.md`** - Contributor Covenant v2.1 с применимостью для проекта
-- **`.github/ISSUE_TEMPLATE/`** - шаблоны: `bug-report.yml` (с обязательными полями ОС/версия Claude Code/шаги), `feature-request.yml` (с фильтром универсальности), `question.yml` (роутинг в Discussions), `config.yml` (ссылки на Discussions, Security Advisory, документацию)
+- **`.github/ISSUE_TEMPLATE/`** - шаблоны: `bug-report.yml` (с обязательными полями ОС/версия Qwen Code/шаги), `feature-request.yml` (с фильтром универсальности), `question.yml` (роутинг в Discussions), `config.yml` (ссылки на Discussions, Security Advisory, документацию)
 
 ### Обновлено
 - **README badges:** версия релиза, MIT-лицензия, статус CI security audit, PRs welcome
-- **README FAQ:** 9 вопросов - «почему этот а не пустой CLAUDE.md», «бесплатно ли», «есть ли английская», «сколько токенов», «что если закрою ноут», «что если AUTOPILOT ошибётся», «работает ли в Cursor/Codex», «коммерческое использование», «куда писать»
+- **README FAQ:** 9 вопросов - «почему этот а не пустой QWEN.md», «бесплатно ли», «есть ли английская», «сколько токенов», «что если закрою ноут», «что если AUTOPILOT ошибётся», «работает ли в Cursor/Codex», «коммерческое использование», «куда писать»
 - **README TL;DR** в 3 строки на первом экране - чтобы пользователь за 10 секунд понял что делать
 - **README ссылка на `examples/coffeeshop/`** - показать результат до онбординга
 - **LICENSE copyright:** «Artemii Miller / Школа Смысло-кодинга» - согласовано с фактическим владельцем репозитория
-- **README URL для клонирования:** `artemiimillier/claude-code-starter` вместо placeholder `smyslokoding/claude-code-starter`
+- **README URL для клонирования:** `artemiimillier/qwen-code-starter` вместо placeholder `smyslokoding/qwen-code-starter`
 
 ## [1.0.0] - 2026-04-23
 
@@ -54,11 +54,11 @@
 
 #### Что получает пользователь
 - **AUTOPILOT** из 10 шагов с возобновлением после паузы, Reality Check после блока products, поддержкой commercial и non-commercial веток
-- **CLAUDE.md** - правила работы с агентом (8 принципов + безопасность + 5 триггеров планирования)
+- **QWEN.md** - правила работы с агентом (8 принципов + безопасность + 5 тригеров планирования)
 - **.business/** - «второй мозг» проекта с 7 подпапками (company, products, audience, goals, economics, marketing, assets) + execution/ для операционного планирования
 - **plans/** и **retrospectives/** с README и TEMPLATE
 - **prompts/** - 16 готовых промптов под типовые задачи (setup 9, launch 3, methodology 4)
-- **templates/** - CLAUDE.md.tmpl + claude-settings.json.example (hooks + 4 категории запретов безопасности в 9 regex)
+- **templates/** - QWEN.md.tmpl + qwen-settings.json.example (hooks + 4 категории запретов безопасности в 9 regex)
 - **scripts/security-audit.sh** - локальная проверка перед публикацией форка
 - **.github/workflows/security-audit.yml** - CI-проверка при push
 - **.github/hooks/pre-commit.sample** - защита от случайного коммита секретов
@@ -67,7 +67,7 @@
 - Удалены внутренние рабочие файлы автора (TEST-PROTOCOL.md, рабочие ретро) - `retrospectives/` содержит только `README.md` и `TEMPLATE.md` как образец
 
 #### Подтверждённые инварианты
-- AUTOPILOT запускается с любой первой фразы (СТОП-инструкция в начале CLAUDE.md)
+- AUTOPILOT запускается с любой первой фразы (СТОП-инструкция в начале QWEN.md)
 - Честные 90-120 мин + точка паузы после шага 7
 - Возобновление через `last_completed_step` (включая подшаги 8.N для интервью)
 - `.business/` видна в сайдбаре VS Code (.vscode/settings.json)
@@ -106,7 +106,7 @@
 ### Улучшено (P3)
 - AUTOPILOT шаг 3: добавлен вариант «Другое - скажи мне какой стек» для Go/Rust/Elixir/.NET/Java
 - AUTOPILOT шаг 5: формулировка «4 запрета = 9 regex» чтобы пользователь не удивлялся количеству строк в settings.json
-- `CLAUDE.md` таблица «Где что искать» дополнена строками про `retrospectives/` и `.business/execution/`
+- `QWEN.md` таблица «Где что искать» дополнена строками про `retrospectives/` и `.business/execution/`
 
 ## [0.3.0] - 2026-04-23
 
@@ -120,17 +120,17 @@
 
 ### Добавлено
 - 16 готовых промптов в `prompts/`:
-  - `setup/` (9) - голосовой ввод, hooks, security, интервью, CLAUDE.md, plans, тест-цикл, skills с аудитом, Playwright
+  - `setup/` (9) - голосовой ввод, hooks, security, интервью, QWEN.md, plans, тест-цикл, skills с аудитом, Playwright
   - `launch/` (3) - GitHub, деплой, платежи
   - `methodology/` (4) - критика плана, «10 причин обосраться», импорт проекта, планирование недели
 
 ## [0.1.0] - 2026-04-23
 
 ### Добавлено
-- Структура репо: `CLAUDE.md`, `AUTOPILOT.md`, `.business/` (7 подпапок), `plans/`, `retrospectives/`, `templates/`
+- Структура репо: `QWEN.md`, `AUTOPILOT.md`, `.business/` (7 подпапок), `plans/`, `retrospectives/`, `templates/`
 - AUTOPILOT с 10 шагами онбординга, frontmatter-флагами, возобновлением после паузы, Reality Check
-- CLAUDE.md с СТОП-инструкцией для автозапуска AUTOPILOT
+- QWEN.md с СТОП-инструкцией для автозапуска AUTOPILOT
 - `.vscode/settings.json` для видимости `.business/`
 - TROUBLESHOOTING.md со решениями типовых проблем
-- `templates/CLAUDE.md.tmpl` для генерации под пользователя
+- `templates/QWEN.md.tmpl` для генерации под пользователя
 - MIT LICENSE, README, .gitignore
